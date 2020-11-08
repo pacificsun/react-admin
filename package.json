@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "server": "json-server --watch db.json --port 5000",
-    "client":"yarn --cwd client start"
+    "client": "yarn --cwd client start",
+    "dev":"concurrently \"yarn server\" \"yarn client\""
   },
   "dependencies": {
+    "concurrently": "^5.3.0",
     "json-server": "^0.16.2"
   }
 }
