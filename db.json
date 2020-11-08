@@ -19,7 +19,23 @@
         "publishedAt":"10-01-2020"
     }
 ],
-    "users":[]
+    "users":[
+        {
+            "id":"1",
+            "name": "John Doe",
+            "email":"john@gmail.com"
+        },
+        {
+            "id":"2",
+            "name": "John Doe",
+            "email":"john@gmail.com"
+        },
+        {
+            "id":"3",
+            "name": "John Doe",
+            "email":"john@gmail.com"
+        }
+    ]
 
 
 }
