@@ -1,6 +1,13 @@
 import React from 'react';
+import { Admin, Resource } from 'react-admin';
+import restProvider from 'ra-data-simple-rest';
+
 function App() {
-  return <div className="App">Hello</div>;
+  return (
+    <Admin dataProvider={restProvider('http://localhost:3000')}>
+      <Resource name="posts" list={PostList} />
+    </Admin>
+  );
 }
 
 export default App;
